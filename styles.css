@@ -8,10 +8,12 @@
   font-family: consolas;
   border: 10px solid #11000d;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffdd83;
   border-radius: 25px;
   height: 100px;
-  text-align: center;
   box-shadow: 5px 5px 50px rgb(200, 245, 3);
 }
 .body {
@@ -28,10 +30,10 @@ main {
   text-align: center;
   margin: 15px;
   position: relative;
-  background-color: #e21818;
+  background-color: #8f43ee;
 }
 .profile__container {
-  border: solid red;
+  border: none;
   text-align: center;
   margin: 15px;
   position: relative;
@@ -42,11 +44,11 @@ main {
 }
 .profile__container__about-me {
   border: solid red;
-  text-align: center;
+  text-align: left;
   margin: 15px;
   position: relative;
   background-color: wheat;
-  display: flex;
+  display: grid;
 }
 .counters {
   display: flex;
@@ -92,6 +94,20 @@ button span {
   font-weight: 900;
   font-family: ro;
 }
+.settings {
+  border: none;
+  margin: 15px;
+  position: relative;
+  background-color: wheat;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /*align-items: center; */
+}
+h6 {
+  font-size: larger;
+}
 .nav-bar {
   position: fixed;
   box-shadow: 5px 5px 50px black;
@@ -108,7 +124,7 @@ button span {
 .footer__link {
   text-align: center;
   width: 100%;
-  padding: 15px;
+  padding: 18px;
 }
 .footer__link:hover {
   background-color: #98dfd6;
