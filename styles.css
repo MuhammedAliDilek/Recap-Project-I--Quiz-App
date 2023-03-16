@@ -32,6 +32,8 @@ main {
   position: relative;
   background-color: #8f43ee;
 }
+
+/* Profile page Css */
 .profile__container {
   border: none;
   text-align: center;
@@ -107,7 +109,7 @@ button span {
   border: solid blue;
   border-radius: 100%;
   border-style: dotted;
-  background-color: rgb(140, 140, 170);
+  background-color: rgb(22, 223, 4);
   margin: 5px;
   color: black;
   list-style: none;
@@ -133,6 +135,7 @@ h6 {
   box-shadow: 5px 5px 50px black;
   bottom: 0;
   padding: 0;
+  margin: 0%;
   width: 100%;
   height: 10vh;
   background: #ffdd83;
@@ -145,7 +148,9 @@ h6 {
   text-align: center;
   width: 100%;
   padding: 18px;
+  margin: 0%;
 }
 .footer__link:hover {
   background-color: #98dfd6;
+  margin: 0%;
 }
