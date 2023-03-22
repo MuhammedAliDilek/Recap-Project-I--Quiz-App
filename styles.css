@@ -6,6 +6,9 @@
 
 .site-header {
   font-family: consolas;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   border: 10px solid #11000d;
   text-align: center;
   display: flex;
@@ -24,9 +27,9 @@ main {
   border-radius: 20px;
   flex-direction: column;
   margin: 20px;
-  padding: 20px;
+  padding: 100px 20px; /* adds 100px at top & bottom and 20px left & right */
 }
-.card__container {
+.card {
   border: solid red;
   text-align: center;
   margin: 15px;
@@ -102,13 +105,11 @@ button {
   top: -15px;
   right: 0;
 }
-button span {
-  border: 1px solid red;
-}
-.tags {
+
+.card__tags {
   display: flex;
 }
-.tagsr {
+.card__tags__item {
   border: solid blue;
   border-radius: 100%;
   border-style: dotted;
