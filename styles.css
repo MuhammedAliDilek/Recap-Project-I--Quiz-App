@@ -4,24 +4,6 @@
   padding: 0;
 }
 
-.site-header {
-  font-family: consolas;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  border: 10px solid #11000d;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffdd83;
-  border-radius: 25px;
-  height: 100px;
-  box-shadow: 5px 5px 50px rgb(200, 245, 3);
-}
-.body {
-  background-color: #00235b;
-}
 main {
   display: flex;
   border-radius: 20px;
@@ -37,61 +19,10 @@ main {
   position: relative;
   background-color: #8f43ee;
 }
-
-/* Profile page Css */
-.profile__container {
-  border: none;
-  text-align: center;
-  margin: 15px;
-  position: relative;
-  background-color: wheat;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.profile__container__about-me {
-  border: solid none;
-  text-align: left;
-  margin: 15px;
-  position: relative;
-  background-color: wheat;
-  display: grid;
-}
-.counters {
-  display: flex;
-  justify-content: space-evenly;
-}
-.profilicon {
-  width: 150px;
-  height: 80px;
-}
-.question-counter {
-  border: solid red;
-  margin: 15px;
-  font-size: xx-large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8f43ee;
-}
-.bookmark-counter {
-  border: solid red;
-  margin: 15px;
-  font-size: xx-large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8f43ee;
+.hide {
+  display: none;
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 /* rounded slider */
 button {
   border: solid 3px solid brown;
@@ -134,30 +65,4 @@ button {
 }
 h6 {
   font-size: larger;
-}
-.nav-bar {
-  position: fixed;
-  box-shadow: 5px 5px 50px black;
-  bottom: 0;
-  padding: 0;
-  margin: 0%;
-  width: 100%;
-  background: #ffdd83;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
-  display: flex;
-}
-.footer__link {
-  text-align: center;
-  width: 100%;
-  padding: 18px;
-  margin: 0%;
-}
-.footer__link img {
-  width: 50px;
-}
-.footer__link:hover {
-  background-color: #98dfd6;
-  margin: 0%;
 }
