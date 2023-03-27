@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="global.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body class="body">
@@ -17,15 +18,19 @@
         <h2 class="card__question">
           What property flips the axes in the flexbox?
         </h2>
-        <button class="card__button">
+        <div id="">
+        <button class="card__button"> 
           Show answer!
-        </button class="card__button">
-        <img
+        </button>
+        <p class="hide" id="answer_text">Great Axes</p>
+         </div>
+
+        <img 
           src="./assets/bookmark.png"
           alt="bookmark"
           class="card__bookmark"
           width="50px"
-        />
+          />
         <ul class="card__tags">
           <li class="card__tags__item">#html</li>
           <li class="card__tags__item">#css</li>
@@ -37,12 +42,12 @@
         <button class="card__button">
           Show answer!
         </button class="card__button">
-        <img
+        <img 
           src="./assets/bookmark.png"
           alt="bookmark"
           class="card__bookmark"
           width="50px"
-        />
+          />
         <ul class="card__tags">
           <li class="card__tags__item">#html</li>
           <li class="card__tags__item">#css</li>
@@ -96,6 +101,9 @@
       <a href="./bookmark.html" class="footer__link">
         <img src="./assets/bookmark_transparent.png" alt="Bookmarks" />
       </a>
+      <a href="./form.html" class="footer__link">
+        <img src="./assets/write.png" alt="form" />
+        </a>
       <a href="./profile.html" class="footer__link">
         <img src="./assets/profile.png" alt="Profile" />
       </a>
