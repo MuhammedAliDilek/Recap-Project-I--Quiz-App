@@ -7,20 +7,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="global.css" />
     <script src="script.js" defer></script>
+    <script src="form.js" defer></script>
+
   </head>
   <body class="body">
     <header class="site-header">
       <h1>Quiz App</h1>
     </header>
-    <section class="card">
-      <label for="story">Tell us your story:</label>
+    <main>
+    <form aria-labelledby="form-heading" aria-describedby="form-description" id="form">
+      <fieldset>
+        <legend>Make Your Own Questions</legend>
 
-      <textarea id="story" name="story" rows="5" cols="33">
- It was a dark and stormy night...
-        </textarea
-      >
-    </section>
+        <!-- Email: label & input -->
+        <label id="question-label"></label>
+      
+        <label for="question">Your Questions:</label>
+        <textarea 
+        name="question" class="form-textarea" id="question" 
+        cols="30" rows="10" placeholder="Write your Question here"
+        ></textarea>
+        <label id="question-info" class="info hidden"></label>
 
+        <label for="answer">Your Answer:</label>
+        <textarea
+          name="answer" class="form-textarea" id="answer"  
+          cols="30" rows="10" placeholder="Write your answer here"
+          ></textarea>
+        <label id="answer-info" class="info hidden"></label>
+
+        
+        <label for="tag">Tags:</label>
+        <input type="text"
+        name="tag" class="form-input" id="tags" 
+        cols="10" rows="2" placeholder="Write your Tags here"
+        ></input>
+
+        <!-- Two Checkboxes: labels & inputs -->
+        <label for="newsletter"></label>
+        <input type="checkbox" name="newsletter" id="newsletter" /> Sign me
+          up for newsletter(New question every week!).</label>
+        <label for="consent"></label>
+        <input type="checkbox" name="consent" id="consent"> I agree to some stuff!
+        <!-- Two Buttons: reset & submit -->
+        <br>
+        <button type="submit">Send Question</button>
+      </fieldset>
+     
+    </form>
+</main>
     <footer class="nav-bar">
       <a href="./index.html" class="footer__link">
         <img src="assets/home_filled.png" alt=" Home Page" />

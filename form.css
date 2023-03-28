@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef8f8;
+  display: grid;
+}
+
+label {
+  margin-right: 1rem;
+  text-align: left;
+}
+
+label,
+.hidden {
+  visibility: hidden;
+}
+label,
+.visible {
+  visibility: visible;
+}
+.info {
+  width: 100%;
+  text-align: end;
+}
+form {
+  display: block;
+  background-color: white;
+  text-align: center;
+  margin: 15px;
+  padding: 25px;
+}
+
+input:not(input[type="checkbox"]) {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.radio-options {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.radio-options > legend {
+  background-color: #c8f;
+  color: white;
+  padding: 0.2rem;
+}
+
+textarea {
+  margin-bottom: 10px;
+  height: 4rem;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+}
+
+input[type="radio"] {
+  bottom: 2px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+legend {
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+}
