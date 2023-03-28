@@ -15,9 +15,9 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-    <form aria-labelledby="form-heading" aria-describedby="form-description">
+    <form aria-labelledby="form-heading" aria-describedby="form-description" id="form">
       <fieldset>
-        <legend>Enter your information</legend>
+        <legend>Make Your Own Questions</legend>
 
         <!-- Email: label & input -->
         <label id="question-label"></label>
@@ -36,12 +36,12 @@
           ></textarea>
         <label id="answer-info" class="info hidden"></label>
 
-
-        <label for="question">Tags:</label>
-        <textarea 
-        name="tag" class="form-textarea" id="tag" 
+        
+        <label for="tag">Tags:</label>
+        <input type="text"
+        name="tag" class="form-input" id="tags" 
         cols="10" rows="2" placeholder="Write your Tags here"
-        ></textarea>
+        ></input>
 
         <!-- Two Checkboxes: labels & inputs -->
         <label for="newsletter"></label>
@@ -51,7 +51,7 @@
         <input type="checkbox" name="consent" id="consent"> I agree to some stuff!
         <!-- Two Buttons: reset & submit -->
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit">Send Question</button>
       </fieldset>
      
     </form>
