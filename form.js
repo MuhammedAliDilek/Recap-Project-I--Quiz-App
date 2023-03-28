@@ -8,7 +8,7 @@ const question = document.querySelector("#question");
 // Answer textarea
 const answer = document.querySelector("#answer");
 
-const form = document.getElementById("from");
+//const form = document.getElementById("from");
 
 const textCharacterSizeLimit = 50;
 
@@ -66,14 +66,14 @@ function setAnswerLabelLimitSize(event) {
 }
 
 // new card
-/* 
- form.addEventListener("submit", (e) => {
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
 function createCard() {
   // Get the form elements
-  /*   const question = document
+  const question = document
     .getElementById("question")
     .addEventListener("click", function (event) {
       event.preventDefault();
@@ -88,7 +88,7 @@ function createCard() {
     .addEventListener("click", function (event) {
       event.preventDefault();
     });
- 
+
   // Create the card elements
   const card = document.createElement("div");
   const cardQuestion = document.createElement("h5");
@@ -109,4 +109,3 @@ function createCard() {
   const form = document.getElementById("form");
   form.parentNode.insertBefore(card, form.nextSibling);
 }
- */
